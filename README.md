@@ -17,3 +17,12 @@ An e-commerce web app made with **React, Redux, ChakraUI** for the frontend and 
   4. `cd .. && cd server && npm install`
 
   5. `cd .. && npm dev`
+
+## env: 
+
+  1. MONGO_URI = ""
+  2. STRIPE_SECRET_KEY = ""
+  3. STRIPE_PUBLISHABLE_KEY = ""
+  4. PORT = 5000
+  5. NODE_ENV = ""
+  6. JWT_SECRET = ""
