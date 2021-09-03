@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@200;400;600&display=swap");
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	/*font-family: "Poppins", sans-serif !important;*/
+	font-family: "Inter", sans-serif !important;
+	padding-bottom: 6rem;
+	background-color: #f6f6f6 !important;
+	background-image: -webkit-radial-gradient(
+			at 50% 100%,
+			rgba(255, 255, 255, 0.5) 0%,
+			rgba(0, 0, 0, 0.5) 100%
+		),
+		-webkit-linear-gradient(top, rgba(255, 255, 255, 0.25) 0%, rgba(
+						0,
+						0,
+						0,
+						0.25
+					)
+					100%) !important;
+	background-image: radial-gradient(
+			at 50% 100%,
+			rgba(255, 255, 255, 0.5) 0%,
+			rgba(0, 0, 0, 0.5) 100%
+		),
+		linear-gradient(
+			to bottom,
+			rgba(255, 255, 255, 0.25) 0%,
+			rgba(0, 0, 0, 0.25) 100%
+		) !important;
+	background-blend-mode: screen, overlay;
+}
+
+.img-con {
+	overflow: hidden;
+	background-image: url(./assets/girl.jpg);
+	width: 60%;
+	height: 90vh;
+	background-size: cover;
+	background-position: center;
+}
+
+.copy {
+	font-family: "Poppins", sans-serif !important;
+}
+
+@media screen and (max-width: 60em) {
+	.img-con {
+		width: 100%;
+		height: 100vh;
+		margin-top: 3rem;
+		background-size: cover;
+		background-position: center bottom;
+	}
+	.product-img {
+		background-size: cover;
+		width: 100%;
+	}
+	.cart-product-img {
+		width: 100%;
+		object-fit: cover;
+		height: 80px;
+	}
+}
+@media screen and (min-width: 60em) {
+	.product-img-container {
+		height: 80vh;
+		margin: auto;
+		overflow: hidden;
+	}
+	.product-img {
+		background-position: bottom;
+		margin: auto;
+		height: 100%;
+		transform: scale(1.25);
+	}
+	.cart-product-img {
+		width: 100%;
+		object-fit: cover;
+		height: 200px;
+	}
+}
+
+.cart-no {
+	background: #805ad5;
+	border-radius: 100px;
+	color: white;
+	font-size: 12px;
+	width: 1rem;
+	height: 1rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 2px;
+	position: absolute;
+	right: -2px;
+	top: -3px;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	font-family: "Poppins", sans-serif !important;
+}
+
+button,
+.shoe-name {
+	font-family: "Poppins", sans-serif !important;
+}
+
+.product:hover,
+.product:active,
+.product:focus {
+	transform: scale(1.05);
+	box-shadow: 0.9px 0.3px 10px #9e9da0;
+	transition: 0.25s ease-in-out;
+}
+
+.product {
+	transition: 0.5s ease-in-out;
+}
+
+nav a:hover {
+	text-decoration: underline;
+	letter-spacing: 0.1px;
+	transition: 0.4s ease-in;
+}
+
+.logout-btn:hover {
+	color: indianred !important;
+}
+
+
+
+
+
+/* Used to detect in JavaScript if apps have loaded styles or not. */
+:root {
+	--reach-dialog: 1;
+  }
+  
+  [data-reach-dialog-overlay] {
+	background: hsla(0, 0%, 0%, 0.33);
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	overflow: auto;
+  }
+  
+  [data-reach-dialog-content] {
+	width: 90vw;
+	margin: 10vh auto;
+	background: white;
+	padding: 2rem;
+	outline: none;
+  }
+  
